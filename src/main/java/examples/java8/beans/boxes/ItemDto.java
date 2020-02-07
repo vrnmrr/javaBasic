@@ -1,7 +1,8 @@
 
 
 
-package examples.java8.beans;
+
+package examples.java8.beans.boxes;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,5 +18,6 @@ public class ItemDto {
     private Integer numberInt;
     private Long numberLong;
     private String name;
-
+    
+    private FeatureDto ft;
 }

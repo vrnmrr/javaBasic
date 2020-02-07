@@ -1,10 +1,6 @@
 
 
-
-
-
-
-package examples.java8.beans;
+package examples.java8.beans.boxes;
 
 import java.util.List;
 
@@ -17,13 +13,17 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BoxDto {
+public class FeatureDto {
 
     private Integer numberInt;
     private Long numberLong;
-    private String name;
+    private String desc;
 
-    private List<ItemDto> listItems;
-    
-    private StorageDto storage;
+    private List<FeatureDto> listFeatures;
+
+    public FeatureDto(String desc) {
+        super();
+        this.desc = desc;
+    }
+
 }

@@ -1,6 +1,6 @@
 
 
-package examples.java8.beans;
+package examples.java8.beans.boxes;
 
 import java.util.List;
 
@@ -13,11 +13,15 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class StorageDto {
+public class BoxDto {
 
+    private Integer numberInt;
+    private Long numberLong;
     private String name;
-    private String address;
 
-    private List<BoxDto> listBoxes;
+    private List<ItemDto> listItems;
 
+    private StorageDto storage;
+
+    private FeatureDto ft;
 }
